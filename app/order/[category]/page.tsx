@@ -18,7 +18,7 @@ const OrderPage = async ({ params }: { params: { category: string } }) => {
 
   return (
     <>
-      <h1>Choose your Order</h1>
+      <h1 className="text-4xl mb-3 font-black">Choose your Order</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 items-start">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
